@@ -9,3 +9,4 @@ if __name__ == '__main__':
     print('before raise salary : ' + str(emp1.salary))
     emp1.apply_raise()  # raise emp1 salary
     print('after raise salary : ' + str(emp1.salary))
+    print('No of emp : ' + str(emp1.no_of_emp))
