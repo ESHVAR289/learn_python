@@ -1,16 +1,11 @@
-# This is a sample Python script.
+from oops import Employee
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    emp1 = Employee('Eshvar', 'Mali', 'eshvar289@gmail.com', 27, 50000)
+    emp2 = Employee('Sagar', 'Lohar', 'sagar.lohar@gmail.com', 27, 52000)
+    emp3 = Employee('Rahul', 'Thorat', 'rahul.thorat@gmail.com', 27, 55000)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(emp1.full_name())
+    print('before raise salary : ' + str(emp1.salary))
+    emp1.apply_raise()  # raise emp1 salary
+    print('after raise salary : ' + str(emp1.salary))
